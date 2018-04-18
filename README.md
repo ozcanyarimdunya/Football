@@ -1,0 +1,3 @@
+# Basic python project structure with an example
+
+To be continued ...
