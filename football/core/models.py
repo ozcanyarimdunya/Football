@@ -1,3 +1,6 @@
+from football.utils import convert_link
+
+
 class Tournament:
     __name = None
     __link = None
@@ -12,7 +15,11 @@ class Tournament:
 
     @property
     def link(self):
-        return self.__link
+        """
+        Link converted because of additional url
+        :return:
+        """
+        return convert_link(self.__link)
 
     def __str__(self):
         return f'<Tournaments(name={self.name}, link={self.link})>'
@@ -70,4 +77,4 @@ class Team:
 
     def __str__(self):
         return f'<Team(pos={self.pos}, name={self.name}, om={self.om}, g={self.g}, b={self.b}, m={self.m}, ' \
-               f'a={self.a}, p={self.p} )> '
+               f'a={self.a}, p={self.p})> '

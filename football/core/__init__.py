@@ -7,27 +7,25 @@ class TournamentScraper:
     """
     Scraper class
     """
-    __url = str()
     __html = str()
     __tournaments = list()
 
-    def __init__(self, url=None):
+    def __init__(self):
         """
         init function
         """
-        self.__url = url
 
-    def open_from_file(self):
+    def open_from_file(self, path):
         """
         open file and get html
         """
-        self.__html = open(self.__url).read()
+        self.__html = open(path).read()
 
-    def open_from_url(self):
+    def open_from_url(self, url):
         """
         open url and get html
         """
-        self.__html = requests.get(self.__url).text
+        self.__html = requests.get(url).text
 
     def __scrap(self):
         """
@@ -56,27 +54,25 @@ class LeagueScraper:
     """
     Scraper class
     """
-    __url = str()
     __html = str()
     __teams = list()
 
-    def __init__(self, url=None):
+    def __init__(self):
         """
         init function
         """
-        self.__url = url
 
-    def open_from_file(self):
+    def open_from_file(self, path):
         """
         open file and get html
         """
-        self.__html = open(self.__url).read()
+        self.__html = open(path).read()
 
-    def open_from_url(self):
+    def open_from_url(self, url):
         """
         open url and get html
         """
-        self.__html = requests.get(self.__url).text
+        self.__html = requests.get(url).text
 
     def __scrap(self):
         """
