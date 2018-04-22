@@ -1,7 +1,7 @@
 # Basic python project structure with an example
 
 ### How to start ?
-    python gui/__init__.py
+    python3 football/main.py
 
 | 1 | 2 |
 |---|---|
