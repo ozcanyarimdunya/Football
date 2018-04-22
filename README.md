@@ -1,7 +1,7 @@
 # Basic python project structure with an example
 
 ### Installation
-    $ python setup.py install
+    $ python3.6 setup.py install
 
 ### Usage
     $ rating
