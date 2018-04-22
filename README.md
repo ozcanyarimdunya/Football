@@ -1,7 +1,12 @@
 # Basic python project structure with an example
 
-### How to start ?
-    python3 football/main.py
+### Installation
+    $ python setup.py install
+
+### Usage
+    $ rating
+
+### Screenshots
 
 | 1 | 2 |
 |---|---|
