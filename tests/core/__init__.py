@@ -1,20 +1,19 @@
-from football.core import LeagueScraper, TournamentScraper
+from football.core import TournamentScraper, LeagueScraper
 
 # tournament_path = 'Tournaments.html'
 tournament_url = 'http://www.goal.com/tr/ligler'
 tc = TournamentScraper()
 tc.open_from_url(url=tournament_url)
-# tc.open_from_file()
+# tc.open_from_file(path=tournament_path)
 tc_list = tc.get_popular_tournaments()
 for i in tc_list:
     print(i)
-
 
 # league_path = 'SuperLigPuanDurumu.html'
 league_url = 'http://www.goal.com/tr/s%C3%BCper-lig/puan-durumu/482ofyysbdbeoxauk19yg7tdt'
 lc = LeagueScraper()
 lc.open_from_url(url=league_url)
-# lc.open_from_file()
+# lc.open_from_file(path=league_path)
 lc_list = lc.get_teams()
 for i in lc_list:
     print(i)

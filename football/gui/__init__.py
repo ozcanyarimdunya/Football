@@ -1,12 +1,10 @@
-import sys
-
-from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem
+from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem
 
 from football.core import TournamentScraper, LeagueScraper
-from gui.forms import MainWindow
+from football.gui.forms import MainWindow
 
 
-class Form(QMainWindow, MainWindow):
+class MainForm(QMainWindow, MainWindow):
     tournaments_list = []
 
     def __init__(self):
@@ -74,9 +72,3 @@ class Form(QMainWindow, MainWindow):
             self.main_layout.setCurrentIndex(1)
         except Exception as e:
             self.label_loading.setText("An error occur!\n" + str(e))
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    form = Form()
-    sys.exit(app.exec_())

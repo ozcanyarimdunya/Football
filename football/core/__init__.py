@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
-from football.core.models import Tournament, Team
 import requests
+
+from football.core.models import Tournament, Team
 
 
 class TournamentScraper:
